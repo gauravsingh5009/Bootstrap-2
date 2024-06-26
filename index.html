@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Bootstrap Project2</title>
 </head>
 <body>
@@ -31,9 +32,9 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <div class="container">
-          <a class="navbar-brand" href="#"><h1>BizLand.</h1></a>
+          <a class="navbar-brand" href="#"><h1 class="fs-2">BizLand<span class="text-primary">.</span></h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -71,13 +72,16 @@
           </div>
         </div>
     </nav>
-    <div class="wrap-3 py-5" style="background-image: url(./img/hero-bg.jpg);background-size:cover; background-position:center;">
-        <div class="container  px-4 py-5">
+    <div class="wrap-3 py-5 hero">
+        <div class="container py-5">
             <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h2 class="display-4 fw-bold lh-1 mb-3 opacity-100">Welcome to <span class="text-primary">BizLand</span></h2>
-                    <p class="fs-4 text-secondary opacity-100">We are team of talented designers making websites with Bootstrap</p>
-                    <button type="button" class="btn btn-lg btn-primary opacity-100">GET STARTED</button>
+                    <h2 class="display-4 fw-bold lh-1 mb-3">Welcome to <span class="text-primary">BizLand</span></h2>
+                    <p class="fs-4 text-secondary">We are team of talented designers making websites with Bootstrap</p>
+                    <div class="start">
+                        <a class="btn btn-primary px-4" href="#" role="button">GET STARTED</a>
+                        <a href="" class="text-decoration-none watch"><i class="bi bi-play-circle play"></i><span>Watch Video</span></a>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -117,10 +121,10 @@
             </div>
         </div>
     </div>
-    <div class="wrap-5 bg-light py-5">
+    <div class="wrap-5 py-5 bgcolor">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">ABOUT</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill text-primary px-3 bgcolor">ABOUT</span></h2>
                 <h3 class="fs-1">Find Out More <span class="text-primary">About Us</span></h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
@@ -136,16 +140,16 @@
                     <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                     <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt ullam voluptates laboriosam pariatur. Ratione.</p>
                     <div class="d-flex py-4">
-                        <div class="text-primary text-center align-content-center rounded-circle bg-danger fs-5 me-2" style="width: 70px; height: 70px;"><i class="bi bi-shop"></i></div>
-                        <div>
+                        <div class="text-primary text-center align-content-center rounded-circle shadow p-3 mb-5 bg-body rounded fs-5 me-2" style="width: 70px; height: 70px;"><i class="bi bi-shop"></i></div>
+                        <div class="ms-2">
                             <h4 class="fs-5">Ullamco laboris nisi ut aliquip consequat</h4>
                             <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
 
                         </div>
                     </div>
                     <div class="d-flex pb-4">
-                        <div class="text-primary text-center align-content-center rounded-circle bg-danger fs-5 me-2" style="width: 70px; height: 70px;"><i class="bi bi-images"></i></div>
-                        <div>
+                        <div class="text-primary text-center align-content-center rounded-circle shadow p-3 mb-5 bg-body rounded fs-5 me-2" style="width: 70px; height: 70px;"><i class="bi bi-images"></i></div>
+                        <div class="ms-2">
                             <h4 class="fs-5">Magnam soluta odio exercitationem reprehenderi</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati ipsam  trade.</p>
                         </div>
@@ -216,7 +220,7 @@
         <div class="container  py-5">
             <div class="row py-5 row-cols-1 row-cols-sm-2 row-cols-lg-4 text-center">
                 <div class="col position-relative">
-                    <div class="bg-secondary py-3 mb-5">
+                    <div class="bgcolor py-3 mb-5">
                         <div class="border border-5 border-light position-absolute top-0 start-50 translate-middle text-primary text-center align-content-center rounded-circle bg-primary fs-4" style="width: 60px; height: 60px;"><i class="bi bi-emoji-smile fs-4 text-light"></i></div>
                         <div class="py-3">
                             <h2>232</h2>
@@ -225,7 +229,7 @@
                     </div>
                 </div>
                 <div class="col position-relative">
-                    <div class="bg-secondary py-3 mb-5">
+                    <div class="bgcolor py-3 mb-5">
                         <div class="border border-5 border-light position-absolute top-0 start-50 translate-middle text-primary text-center align-content-center rounded-circle bg-primary fs-4" style="width: 60px; height: 60px;"><i class="bi bi-journal-richtext fs-4 text-light"></i></div>
                         <div class="py-3">
                             <h2>521</h2>
@@ -234,7 +238,7 @@
                     </div>
                 </div>
                 <div class="col position-relative">
-                    <div class="bg-secondary py-3 mb-5">
+                    <div class="bgcolor py-3 mb-5">
                         <div class="border border-5 border-light position-absolute top-0 start-50 translate-middle text-primary text-center align-content-center rounded-circle bg-primary fs-4 " style="width: 60px; height: 60px;"><i class="bi bi-headset fs-4 text-light"></i></div>
                         <div class="py-3">
                             <h2>1463</h2>
@@ -243,7 +247,7 @@
                     </div>
                 </div>
                 <div class="col position-relative">
-                    <div class="bg-secondary py-3 mb-5">
+                    <div class="bgcolor py-3 mb-5">
                         <div class="border border-5 border-light position-absolute top-0 start-50 translate-middle text-primary text-center align-content-center rounded-circle bg-primary fs-4" style="width: 60px; height: 60px;"><i class="bi bi-people-fill fs-4 text-light"></i></div>
                         <div class="py-3">
                             <h2>15</h2>
@@ -255,7 +259,7 @@
         </div>
     </div>
 
-    <div class="wrap-8 bg-info py-4">
+    <div class="wrap-8 py-4 bgcolor">
         <div class="container">
             <div class="row text-center">
                 <div class="col-6 col-sm-4 col-lg-2 py-2">
@@ -282,7 +286,7 @@
     <div class="wrap-9 my-5">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">SERVICES</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bgcolor text-primary px-3">SERVICES</span></h2>
                 <h3 class="fs-1">Check our <span class="text-primary">Services</span></h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
@@ -293,7 +297,7 @@
             <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3 text-center">
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="pb-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor pb-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-globe2 fs-1 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Lorem Ipsum</h2>
@@ -302,7 +306,7 @@
                 </div>
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="pb-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor pb-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-file-earmark-text fs-1 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Nemo Enim</h2>
@@ -311,7 +315,7 @@
                 </div>
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="pb-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor pb-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-speedometer2 fs-1 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Magni Dolores</h2>
@@ -320,7 +324,7 @@
                 </div>
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="pb-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor pb-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-globe-central-south-asia fs-1 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Nemo Enim</h2>
@@ -329,7 +333,7 @@
                 </div>
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="py-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor py-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-display fs-2 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Dele cardo</h2>
@@ -338,7 +342,7 @@
                 </div>
                 <div class="col">
                     <div class="border border-2 py-5">
-                        <div class="pb-2 my-4 bg-secondary rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
+                        <div class="bgcolor pb-2 my-4 rounded d-inline-block justify-content-center align-content-center" style="width: 70px; height: 70px;">
                             <i class="bi bi-shop-window fs-1 text-primary"></i>
                         </div>
                         <h2 class="fs-4">Divera don</h2>
@@ -349,7 +353,7 @@
         </div>
     </div>
 
-    <div class="wrap-10 py-5" style="background-image: url(./img/testimonials-bg.jpg); background-size:cover; background-position:center;">
+    <div class="wrap-10 py-5">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -428,7 +432,7 @@
     <div class="wrap-11 my-5 py-5">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">PORTFOLIO</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bgcolor text-primary px-3">PORTFOLIO</span></h2>
                 <h3 class="fs-1">Check our <span class="text-primary">Portfolio</span></h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
@@ -465,10 +469,10 @@
         </div>
     </div>
     
-    <div class="wrap-12 my-5 py-5">
+    <div class="wrap-12 my-5 py-5 bgcolor">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">TEAM</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bgcolor text-primary px-3">TEAM</span></h2>
                 <h3 class="fs-1">Our Hardworking <span class="text-primary">Team</span></h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
@@ -517,10 +521,10 @@
         </div>
     </div>
 
-    <div class="wrap-13 py-4">
+    <div class="wrap-13 py-4 bgcolor">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">F.A.Q</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bgcolor text-primary px-3">F.A.Q</span></h2>
                 <h3 class="fs-1">Frequently Asked <span class="text-primary">Question</span></h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
@@ -533,61 +537,61 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header fs-5" id="flush-headingOne">
-                                <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     Non consectetur a erat nam at lectus urna duis?
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse bg-info" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFour" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
                                 </button>
                             </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFive" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                <button class="accordion-button collapsed bgcolor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
                                 </button>
                             </h2>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseSix" class="accordion-collapse collapse bgcolor" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
                         </div>
@@ -600,7 +604,7 @@
     <div class="wrap-14 py-5 my-5">
         <div class="container">
             <div class="text-center">
-                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bg-primary px-3">CONTACT</span></h2>
+                <h2 class="d-inline-block fs-5"><span class="badge rounded-pill bgcolor text-primary px-3 py-2">CONTACT</span></h2>
                 <h3 class="fs-1 text-primary">Contact Us</h3>
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-lg-6">
@@ -638,12 +642,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 ">
+                <div class="col-12 col-xl-6 ">
                     <div class="ratio ratio-4x3">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6760.931205803717!2d149.13189824563122!3d-35.28461195894348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164ca3b20b34bb%3A0x400ea6ea7695970!2sCanberra%20ACT%2C%20Australia!5e0!3m2!1sen!2sin!4v1718476867557!5m2!1sen!2sin" width="636" height="398" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-xl-6">
                     <div class="shadow-sm p-3 bg-body rounded">
                         <form class="row g-3 p-3">
                             <div class="col-md-6 mb-4">
@@ -668,7 +672,7 @@
         </div>
     </div>
 
-    <div class="wrap-15 py-5">
+    <div class="wrap-15 py-5 bgcolor">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-10 col-lg-8 col-xl-6 text-center">
@@ -676,7 +680,7 @@
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <form>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control shadow-none bg-secondary border-0" aria-label="Subscribe's username" aria-describedby="button-addon2">
+                            <input type="text" class="form-control shadow-sm bg-body rounded  border-0" aria-label="Subscribe's username" aria-describedby="button-addon2">
                             <button class="btn shadow-none bg-primary text-light " type="button" id="button-addon2">Subscribe</button>
                           </div>
                     </form>
@@ -731,7 +735,7 @@
         </div>
     </div>
 
-    <div class="wrap-17 py-2">
+    <div class="wrap-17 py-4 bgcolor">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-6 text-center text-lg-start">
